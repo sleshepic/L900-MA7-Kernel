@@ -70,7 +70,7 @@ UTS_TRUNCATE="cut -b -$UTS_LEN"
   
   echo \#define UTS_MACHINE \"$ARCH\"
 
-  echo \#define UTS_VERSION \"\"
+  echo \#define UTS_VERSION \"`echo $UTS_VERSION | $UTS_TRUNCATE`\"
 
   echo \#define LINUX_COMPILE_BY \"Sleshepic_The_Governor_v1.5\"
   echo \#define LINUX_COMPILE_HOST \"\"
